@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #FADCC2;
+    --secondary-color: #FBC697;
+    --primary-btn-color: #BF2A45;
+    --secondary-text-color: RGBA(18, 18, 18, 0.6);
+}
+
+body{
+    background: var(--primary-color);
+}
+.faqcontainer{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+.faqtitle{
+    border: 1px solid grey;
+    padding: 5px 20px;
+    border-radius: 25px;
+}
+.Featured-Asked-Questions > h2{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10px;
+}
+.faq-container{
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+}
+.faq-question .toggle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    cursor: pointer;
+    background-color:transparent;
+    border: none;
+    width: 95%;
+    margin-top: 10px;
+}
+.faq-question .toggle i{
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+.uil-angle-ch{
+    transition: all 0.8s;
+    transform: rotate(180deg);
+}
+.faq-answer{
+    margin-top: 10px;
+}
+.faq-answer hr{
+    height: 1px;
+    background-color: black;
+    margin-top: 10px;
+    border: none;
+}
+.faq-answer{
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.8s;
+}
+.faq-active{
+    max-height: 200px;
+    transition: max-height 0.8s;
+}
+@media only screen and (max-width: 992px){
+    .faq-container {
+        width: 90%!important;
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .faq-container {
+        width: 90%!important;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .Featured-Asked-Questions > h2 {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .faq-question .toggle {
+        font-size: 11px;
+    }
+ 
+    
+}
+@media only screen and (max-width: 768px){
+    .faq-container {
+        width: 90%!important;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .Featured-Asked-Questions > h2 {
+        font-size: 25px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .faq-question .toggle {
+        font-size: 10px;
+    }
+ 
+    
+}

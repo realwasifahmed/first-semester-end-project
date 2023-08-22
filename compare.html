@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Camparisn Page</title>
+    <link rel="shortcut icon" href="IMG/Fevicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/headerFooter.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="CSS/campare.css">
+</head>
+
+<body>
+    <header>
+      <!-- Nav Menu Start -->
+    <header>
+        <nav class="desktop-display" id="nav">
+            <!-- NAV BAR LOGO AREA -->
+            <div class="left-nav">
+                <a href="/"><img src="IMG/Logo.webp" alt="Logo"></a>
+            </div>
+
+            <!-- NAV BAR NAVIGATION ARE -->
+            <div class="navigation">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="Compare.html">Comparison</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                </ul>
+            </div>
+
+            <!-- FURTHER NAVIGATIONS -->
+            <div class="right-nav">
+                <div class="container">
+                    <a href="#"><i class="uil uil-search"></i>Search</a>
+                    <a href="#"><i class="uil uil-heart"></i> Wishlist</a>
+                    <a href="#" onclick="showProfile()"><i class="uil uil-user"></i> Profile</a>
+                    <a class="Cart" onclick="showcart()"><i class="uil uil-briefcase"></i> My Cart <div id="num">0</div>
+                    </a>
+                </div>
+                <div class="cart-container">
+                    <div class="cart-container-content">
+                        <p>Your cart is empty</p>
+                    </div>
+                </div>
+                <div class="profile-container">
+                    <div class="profile-container-content">
+                        <p><a href="#"><i class="uil uil-lock"></i> Login</a></p>
+                        <p><a href="#"><i class="uil uil-user"></i> Create Account</a></p>
+                        <select name="" id="">
+                            <option value="0">United States ($)</option>
+                            <option value="1">Pakistan (PKR)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="mobile-responsive" id="mblNav">
+            <div class="logo-container">
+                <a href="/"> <img src="IMG/Logo.webp" alt=""></a>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><i class="uil uil-search"></i></li>
+                    <li><i class="uil uil-heart"></i></li>
+                    <li><i class="uil uil-user"></i></li>
+                    <a onclick="showcart()">
+                        <li><i class="uil uil-shopping-bag"> <span>0</span></i></li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+        <!-- <div class="login-form-container">
+        <div class="form-log-container">
+            <i class="uil uil-times"></i>
+            <div class="form-container">
+                <h3>Login</h3>
+                <p>If you have an account, please log in.</p>
+                <form action="#">
+                    <input type="email" name="email" id="logemail" placeholder="Email">
+                    <input type="password" name="password" id="logpassword" placeholder="password">
+                    <a href="#">Forget Your Password?</a>
+                    <input type="button" value="Sign In" onclick="checkCredentials()">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="success-login">
+        <h2>Login Success</h2>
+    </div>
+    </div>
+    <div class="failed-login">
+        <h2>Login Failed</h2>
+    </div> -->
+    </header>
+    <!-- Nav Menu END -->
+
+
+    <div class="page-parent-container">
+        <h2>Compare</h2>
+    </div>
+
+    <div class="parent-container">
+
+        <div class="campare-container">
+            <div class="div-1">
+                <h2>Select Products</h2>
+            </div>
+            <div class="div-2">
+                <select class="form-control" id="select1" onchange="item1(this.value)">
+                    <option value="0">--- Select Anyone ----</option>
+                </select>
+            </div>
+            <div class="div-3">
+                <select class="form-control" id="select2" onchange="item2(this.value)">
+                    <option value="0">--- Select Anyone ----</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="campare-container">
+            <div class="div-1">
+                <h3>Product Image</h3>
+            </div>
+            <div class="div-2">
+                <img src="" alt="" id="img1">
+            </div>
+            <div class="div-3">
+                <img src="" alt="" id="img2">
+            </div>
+        </div>
+
+        <div class="campare-container">
+            <div class="div-1">
+                <h3>Price</h3>
+            </div>
+            <div class="div-2">
+                <b>
+                    <p id="price1"></p>
+                </b>
+            </div>
+            <div class="div-3">
+                <b>
+                    <p id="price2"></p>
+                </b>
+            </div>
+        </div>
+
+        <div class="campare-container">
+            <div class="div-1">
+                <h3>Description</h3>
+            </div>
+            <div class="div-2">
+                <p id="desc1"></p>
+            </div>
+            <div class="div-3">
+                <p id="desc2"></p>
+            </div>
+        </div>
+
+        <div class="campare-container">
+            <div class="div-1">
+                <h3>Product Brand</h3>
+            </div>
+            <div class="div-2">
+                <p id="brand1"></p>
+            </div>
+            <div class="div-3">
+                <p id="brand2"></p>
+            </div>
+        </div>
+
+        <div class="campare-container">
+            <div class="div-1">
+                <h3>View Product</h3>
+            </div>
+            <div class="div-2">
+                <a href="" target="_blank" id="btn1">View Product</a>
+            </div>
+            <div class="div-3">
+                <a href="" target="_blank" id="btn2">View Product</a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="alert-container alertshownone" id="alertbox">
+        <div class="alert-content-container">
+            <i class="uil uil-times" id="closealertbox"></i>
+            <div class="content-container">
+                <img src="https://cdn.pixabay.com/photo/2014/03/25/15/17/cross-296395_1280.png" alt="">
+                <h2>Error: Minimum Product Selection Required</h2>
+                <p>We're sorry, but in order to compare products, you need to select at least two different products.
+                    Please choose another product to compare alongside the one you have already selected.</p>
+            </div>
+        </div>
+    </div>
+
+ <!-- Footer -->
+ <footer>
+    <hr>
+    <footer class="container">
+        <div class="footer-1">
+            <img src="IMG/Logo.webp" alt="Logo">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s.</p>
+            <a href="#">Social Media</a>
+            <i class="uil uil-facebook-f"></i>
+            <i class="uil uil-linkedin"></i>
+            <i class="uil uil-instagram"></i>
+        </div>
+        <div class="footer-2">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Faqs.html">FAQ</a></li>
+                <li>-</li>
+            </ul>
+        </div>
+        <div class="footer-3">
+            <h3>Extras</h3>
+            <ul>
+                <li><a href="Compare.html">Compare</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+        </div>
+        <div class="footer-4">
+            <h3>Contact Us</h3>
+            <ul>
+                <li><i class="uil uil-location-point"></i> 4800 San Mateo Ln NE</li>
+                <li><i class="uil uil-phone"></i> (505) 881-0080</li>
+                <li><i class="uil uil-envelope"></i> info@email.com</li>
+            </ul>
+        </div>
+    </footer>
+    <hr>
+    <div class="copy-right">
+        <p> &copy; 2023, Develop by <a href="https://fb.me/wasif0ahmed">Wasif Ahmed</a> & <a href="#">Husnain</a>
+        </p>
+    </div>
+</footer>
+<!-- Footer -->
+
+
+
+    <script src="JS/compare.js"></script>
+    <script src="JS/header.js"></script>
+</body>
+
+</html>

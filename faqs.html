@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faqs - Atomic</title>
+    <link rel="stylesheet" href="CSS/headerFooter.css">
+    <link rel="stylesheet" href="CSS/faqs.css">
+    <link rel="shortcut icon" href="IMG/Fevicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+
+<body>
+ <!-- Nav Menu Start -->
+ <header>
+    <nav class="desktop-display" id="nav">
+        <!-- NAV BAR LOGO AREA -->
+        <div class="left-nav">
+            <a href="/"><img src="IMG/Logo.webp" alt="Logo"></a>
+        </div>
+
+        <!-- NAV BAR NAVIGATION ARE -->
+        <div class="navigation">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="Compare.html">Comparison</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutus.html">About</a></li>
+            </ul>
+        </div>
+
+        <!-- FURTHER NAVIGATIONS -->
+        <div class="right-nav">
+            <div class="container">
+                <a href="#"><i class="uil uil-search"></i>Search</a>
+                <a href="#"><i class="uil uil-heart"></i> Wishlist</a>
+                <a href="#" onclick="showProfile()"><i class="uil uil-user"></i> Profile</a>
+                <a class="Cart" onclick="showcart()"><i class="uil uil-briefcase"></i> My Cart <div id="num">0</div>
+                </a>
+            </div>
+            <div class="cart-container">
+                <div class="cart-container-content">
+                    <p>Your cart is empty</p>
+                </div>
+            </div>
+            <div class="profile-container">
+                <div class="profile-container-content">
+                    <p><a href="#"><i class="uil uil-lock"></i> Login</a></p>
+                    <p><a href="#"><i class="uil uil-user"></i> Create Account</a></p>
+                    <select name="" id="">
+                        <option value="0">United States ($)</option>
+                        <option value="1">Pakistan (PKR)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="mobile-responsive" id="mblNav">
+        <div class="logo-container">
+            <a href="/"> <img src="IMG/Logo.webp" alt=""></a>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><i class="uil uil-search"></i></li>
+                <li><i class="uil uil-heart"></i></li>
+                <li><i class="uil uil-user"></i></li>
+                <a onclick="showcart()">
+                    <li><i class="uil uil-shopping-bag"> <span>0</span></i></li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+    <!-- <div class="login-form-container">
+    <div class="form-log-container">
+        <i class="uil uil-times"></i>
+        <div class="form-container">
+            <h3>Login</h3>
+            <p>If you have an account, please log in.</p>
+            <form action="#">
+                <input type="email" name="email" id="logemail" placeholder="Email">
+                <input type="password" name="password" id="logpassword" placeholder="password">
+                <a href="#">Forget Your Password?</a>
+                <input type="button" value="Sign In" onclick="checkCredentials()">
+            </form>
+        </div>
+    </div>
+</div>
+<div class="success-login">
+    <h2>Login Success</h2>
+</div>
+</div>
+<div class="failed-login">
+    <h2>Login Failed</h2>
+</div> -->
+</header>
+<!-- Nav Menu END -->
+
+    <div class="faqcontainer">
+        <div class="faqtitle">
+            <h4> Home <i class="uil uil-angle-right-b"></i> Faqs</h4>
+        </div>
+
+        <div class="Featured-Asked-Questions">
+            <h2>Featured Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-question">
+                    <button class="toggle">
+                        <h2>What is the fashion brand known for in the world of perfumes?</h2>
+                        <i class="uil uil-angle-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>The fashion brand is renowned for its exquisite and luxurious perfume collection that combines
+                        elegance, sophistication, and unique scents.</p>
+                    <hr>
+                </div>
+
+                <div class="faq-question">
+                    <button class="toggle">
+                        <h2>What types of fragrances does the fashion brand offer?</h2>
+                        <i class="uil uil-angle-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>The fashion brand offers a diverse range of fragrances, including floral, woody, oriental,
+                        citrus, and fresh aromas, catering to different preferences and occasions.</p>
+                    <hr>
+                </div>
+
+
+                <div class="faq-question">
+                    <button class="toggle">
+                        <h2>Are the perfumes for men, women, or both?</h2>
+                        <i class="uil uil-angle-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>The fashion brand provides perfumes for both men and women, ensuring a wide selection for all
+                        genders.</p>
+                    <hr>
+                </div>
+
+                <div class="faq-question">
+                    <button class="toggle">
+                        <h2>What is the inspiration behind the brand's perfume collection?</h2>
+                        <i class="uil uil-angle-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>The brand's perfume collection draws inspiration from various sources such as nature, art,
+                        cultural influences, and the brand's own heritage, resulting in captivating and distinctive
+                        scents.</p>
+                    <hr>
+                </div>
+
+                <div class="faq-question">
+                    <button class="toggle">
+                        <h2>How long-lasting are the fragrances?</h2>
+                        <i class="uil uil-angle-down"></i>
+                    </button>
+                </div>
+                <div class="faq-answer">
+                    <p>The fragrances offered by the fashion brand are meticulously formulated to have long-lasting
+                        staying power, allowing wearers to enjoy their captivating scent throughout the day or evening.
+                    </p>
+                    <hr>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <hr>
+        <footer class="container">
+            <div class="footer-1">
+                <img src="../IMG/Logo.webp" alt="Logo">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                    been the
+                    industry's standard dummy text ever since the 1500s.</p>
+                <a href="#">Social Media</a>
+                <i class="uil uil-facebook-f"></i>
+                <i class="uil uil-linkedin"></i>
+                <i class="uil uil-instagram"></i>
+            </div>
+            <div class="footer-2">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Delivery Information</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-3">
+                <h3>Extras</h3>
+                <ul>
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">All Collections</a></li>
+                    <li><a href="#">All Products</a></li>
+                </ul>
+            </div>
+            <div class="footer-4">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="uil uil-location-point"></i> 4800 San Mateo Ln NE</li>
+                    <li><i class="uil uil-phone"></i> (505) 881-0080</li>
+                    <li><i class="uil uil-envelope"></i> info@emial.com</li>
+                </ul>
+            </div>
+        </footer>
+        <hr>
+        <div class="copy-right">
+            <p> &copy; 2023, Develop by <a href="fb.me/wasif0ahmed">Wasif Ahmed</a> & <a href="#">Husnain</a>
+            </p>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+
+
+    <script src="JS/faq.js"></script>
+    <script src="JS/header.js"></script>
+</body>
+
+</html>
